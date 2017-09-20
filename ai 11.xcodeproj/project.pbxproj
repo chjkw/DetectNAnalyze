@@ -105,8 +105,7 @@
 			children = (
 				A29097DE1F723AF200A35837 /* Inceptionv3.mlmodel */,
 			);
-			name = "ML Model";
-			path = "ㅢ ㅡ애디";
+			path = "ML Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
