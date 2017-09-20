@@ -16,6 +16,7 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
   @IBOutlet weak var confidenceLabel: UILabel!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
   
+  @IBOutlet weak var defaultMessageLabel: UILabel!
   var selectedImage: UIImage? {
     didSet {
       self.selectedImageView.image = selectedImage
@@ -40,9 +41,8 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
     self.activityIndicatorView.stopAnimating()
     self.categoryLabel.text = ""
     self.confidenceLabel.text = ""
+    self.defaultMessageLabel.text = "Choose or take a photo."
     
-
-
     // Do any additional setup after loading the view.
   }
   
@@ -83,6 +83,7 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
       self.activityIndicatorView.startAnimating()
       self.categoryLabel.text = ""
       self.confidenceLabel.text = ""
+      self.defaultMessageLabel.text = ""
       DispatchQueue.global(qos: .userInitiated).async {
         self.detectObject()
       }

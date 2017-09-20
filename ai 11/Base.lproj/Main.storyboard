@@ -134,6 +134,12 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-pN-bK0">
                                 <rect key="frame" x="177" y="480" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02i-Nk-QSW">
+                                <rect key="frame" x="166" y="355" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqN-Ym-0J7">
                                 <rect key="frame" x="0.0" y="517" width="375" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -146,11 +152,13 @@
                             <constraint firstItem="I0c-cL-QeS" firstAttribute="top" secondItem="mLr-wz-VQq" secondAttribute="top" id="1OQ-jy-leF"/>
                             <constraint firstItem="mLr-wz-VQq" firstAttribute="bottom" secondItem="agV-mN-WW7" secondAttribute="bottom" constant="57" id="ABo-kG-QnO"/>
                             <constraint firstItem="gqN-Ym-0J7" firstAttribute="width" secondItem="scH-EJ-aP5" secondAttribute="width" id="Ehg-4B-eEV"/>
+                            <constraint firstItem="02i-Nk-QSW" firstAttribute="centerX" secondItem="mLr-wz-VQq" secondAttribute="centerX" id="PKG-Gw-nJs"/>
                             <constraint firstItem="mLr-wz-VQq" firstAttribute="trailing" secondItem="I0c-cL-QeS" secondAttribute="trailing" id="PQP-G4-jyy"/>
                             <constraint firstItem="agV-mN-WW7" firstAttribute="centerX" secondItem="mLr-wz-VQq" secondAttribute="centerX" id="dMi-SV-8vF"/>
                             <constraint firstItem="hkj-pN-bK0" firstAttribute="top" secondItem="I0c-cL-QeS" secondAttribute="bottom" constant="41" id="ejA-r9-6zb"/>
                             <constraint firstItem="hkj-pN-bK0" firstAttribute="centerX" secondItem="mLr-wz-VQq" secondAttribute="centerX" id="to4-la-xhZ"/>
                             <constraint firstItem="agV-mN-WW7" firstAttribute="top" secondItem="gqN-Ym-0J7" secondAttribute="bottom" constant="30" id="u7t-2j-yDe"/>
+                            <constraint firstItem="02i-Nk-QSW" firstAttribute="centerY" secondItem="mLr-wz-VQq" secondAttribute="centerY" id="uve-Fk-NMe"/>
                             <constraint firstItem="gqN-Ym-0J7" firstAttribute="centerX" secondItem="mLr-wz-VQq" secondAttribute="centerX" id="xBo-K4-Gv6"/>
                             <constraint firstItem="I0c-cL-QeS" firstAttribute="leading" secondItem="mLr-wz-VQq" secondAttribute="leading" id="yDE-ax-LBs"/>
                         </constraints>
@@ -167,6 +175,7 @@
                         <outlet property="activityIndicatorView" destination="hkj-pN-bK0" id="UGN-bB-dh2"/>
                         <outlet property="categoryLabel" destination="gqN-Ym-0J7" id="O2G-Fx-yEl"/>
                         <outlet property="confidenceLabel" destination="agV-mN-WW7" id="d2O-Ct-TAr"/>
+                        <outlet property="defaultMessageLabel" destination="02i-Nk-QSW" id="bWp-ly-WXK"/>
                         <outlet property="selectedImageView" destination="I0c-cL-QeS" id="HWu-Tn-Mh5"/>
                     </connections>
                 </viewController>
