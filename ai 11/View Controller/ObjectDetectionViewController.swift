@@ -41,7 +41,7 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
     self.activityIndicatorView.stopAnimating()
     self.categoryLabel.text = ""
     self.confidenceLabel.text = ""
-    self.defaultMessageLabel.text = "Choose or take a photo."
+    self.defaultMessageLabel.text = "+ 버튼을 눌러 사진을 고르세요."
     
     // Do any additional setup after loading the view.
   }
@@ -75,22 +75,26 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
     self.present(actionSheet, animated: true, completion: nil)
   }
   
-  @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     picker.dismiss(animated: true)
     if let uiImage = info[UIImagePickerControllerEditedImage] as? UIImage {
       self.selectedImage = uiImage
       
-      self.activityIndicatorView.startAnimating()
       self.categoryLabel.text = ""
       self.confidenceLabel.text = ""
       self.defaultMessageLabel.text = ""
       DispatchQueue.global(qos: .userInitiated).async {
-        self.detectObject()
+        if #available(iOS 11.0, *) {
+          self.activityIndicatorView.startAnimating()
+          self.detectObject()
+        } else {
+          self.confidenceLabel.text = "iOS 11 이하에서는 지원하지 않는 기능입니다."
+        }
       }
-      
     }
   }
   
+  @available(iOS 11.0, *)
   func detectObject() {
     if let ciImage = self.selectedciImage {
       do {
@@ -105,6 +109,7 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
     }
   }
   
+  @available(iOS 11.0, *)
   func handleObjectDetection(request: VNRequest, error: Error?) {
     if let result = request.results?.first as? VNClassificationObservation {
       DispatchQueue.main.async {
