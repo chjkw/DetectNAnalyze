@@ -235,20 +235,67 @@
             </objects>
             <point key="canvasLocation" x="88.799999999999997" y="657.12143928035982"/>
         </scene>
-        <!--View Controller-->
+        <!--Facial Analysis View Controller-->
         <scene sceneID="950-sC-sfm">
             <objects>
-                <viewController id="9YH-nz-zI5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eEW-Ha-yHL">
+                <viewController id="9YH-nz-zI5" customClass="FacialAnalysisViewController" customModule="ai_11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEW-Ha-yHL" customClass="fac">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J61-B9-n3U">
+                                <rect key="frame" x="0.0" y="64" width="375" height="187.5"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-a0-KUn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="188"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Euc-Uw-G29">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbT-8x-DbX">
+                                            <rect key="frame" x="93" y="0.0" width="188" height="188"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="zbT-8x-DbX" secondAttribute="height" id="FMi-Ih-fgb"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zbT-8x-DbX" firstAttribute="centerY" secondItem="Euc-Uw-G29" secondAttribute="centerY" id="7jw-Y5-gd8"/>
+                                        <constraint firstItem="zbT-8x-DbX" firstAttribute="height" secondItem="Euc-Uw-G29" secondAttribute="height" id="Oek-Wa-YQ4"/>
+                                        <constraint firstItem="zbT-8x-DbX" firstAttribute="centerX" secondItem="Euc-Uw-G29" secondAttribute="centerX" id="SOl-5x-0Xd"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zbM-a0-KUn" firstAttribute="bottom" secondItem="J61-B9-n3U" secondAttribute="bottom" id="1PG-be-vy6"/>
+                            <constraint firstItem="FwM-cB-uY3" firstAttribute="trailing" secondItem="J61-B9-n3U" secondAttribute="trailing" id="1i1-1w-h16"/>
+                            <constraint firstItem="J61-B9-n3U" firstAttribute="top" secondItem="FwM-cB-uY3" secondAttribute="top" id="C0Z-v7-KTd"/>
+                            <constraint firstItem="zbM-a0-KUn" firstAttribute="leading" secondItem="J61-B9-n3U" secondAttribute="leading" id="FzX-xT-kXs"/>
+                            <constraint firstItem="J61-B9-n3U" firstAttribute="height" secondItem="eEW-Ha-yHL" secondAttribute="width" multiplier="0.5" id="Yw5-1t-vRZ"/>
+                            <constraint firstItem="zbM-a0-KUn" firstAttribute="trailing" secondItem="J61-B9-n3U" secondAttribute="trailing" id="gGF-jy-SqX"/>
+                            <constraint firstItem="J61-B9-n3U" firstAttribute="leading" secondItem="FwM-cB-uY3" secondAttribute="leading" id="nR8-Kb-Tdf"/>
+                            <constraint firstItem="zbM-a0-KUn" firstAttribute="top" secondItem="J61-B9-n3U" secondAttribute="top" id="xMG-LI-v9w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FwM-cB-uY3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4Y3-Le-bdT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VWW-r4-BsM">
+                            <connections>
+                                <action selector="addPhoto:" destination="9YH-nz-zI5" id="wyv-7X-A9C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blurredImageView" destination="J61-B9-n3U" id="foY-Ia-aVY"/>
+                        <outlet property="selectedImageView" destination="zbT-8x-DbX" id="PaF-xg-Hal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtA-0k-sr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="619"/>
+            <point key="canvasLocation" x="1012" y="618.44077961019491"/>
         </scene>
     </scenes>
 </document>

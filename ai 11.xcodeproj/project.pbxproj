@@ -14,6 +14,7 @@
 		A23CD1261F7347E9004D66F4 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1231F7346FF004D66F4 /* AVCaptureDevice+Extension.swift */; };
 		A23CD1271F7347EA004D66F4 /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1241F7346FF004D66F4 /* VideoCameraType.swift */; };
 		A23CD1281F7347EA004D66F4 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1251F7346FF004D66F4 /* VideoCapture.swift */; };
+		A23CD12A1F735267004D66F4 /* FacialAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1291F735267004D66F4 /* FacialAnalysisViewController.swift */; };
 		A24E797C1F71FD07000B9D23 /* MainFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24E797B1F71FD07000B9D23 /* MainFeatureCell.swift */; };
 		A29097D31F71FEA500A35837 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29097D21F71FEA500A35837 /* SampleData.swift */; };
 		A29097D51F72086E00A35837 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29097D41F72086E00A35837 /* ObjectDetectionViewController.swift */; };
@@ -32,6 +33,7 @@
 		A23CD1231F7346FF004D66F4 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
 		A23CD1241F7346FF004D66F4 /* VideoCameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
 		A23CD1251F7346FF004D66F4 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		A23CD1291F735267004D66F4 /* FacialAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialAnalysisViewController.swift; sourceTree = "<group>"; };
 		A24E797B1F71FD07000B9D23 /* MainFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeatureCell.swift; sourceTree = "<group>"; };
 		A29097D21F71FEA500A35837 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A29097D41F72086E00A35837 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				A2ABAB2C1F71F5B900028325 /* MainViewController.swift */,
 				A29097D41F72086E00A35837 /* ObjectDetectionViewController.swift */,
 				A29097E01F7296CF00A35837 /* RealTimeDetectionViewController.swift */,
+				A23CD1291F735267004D66F4 /* FacialAnalysisViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				A23CD1281F7347EA004D66F4 /* VideoCapture.swift in Sources */,
 				A29097DF1F723AFD00A35837 /* Inceptionv3.mlmodel in Sources */,
 				A21A1F061F70A7AC000762AE /* AppDelegate.swift in Sources */,
+				A23CD12A1F735267004D66F4 /* FacialAnalysisViewController.swift in Sources */,
 				A24E797C1F71FD07000B9D23 /* MainFeatureCell.swift in Sources */,
 				A29097E11F7296CF00A35837 /* RealTimeDetectionViewController.swift in Sources */,
 				A2ABAB2D1F71F5B900028325 /* MainViewController.swift in Sources */,
