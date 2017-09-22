@@ -15,6 +15,9 @@
 		A23CD1271F7347EA004D66F4 /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1241F7346FF004D66F4 /* VideoCameraType.swift */; };
 		A23CD1281F7347EA004D66F4 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1251F7346FF004D66F4 /* VideoCapture.swift */; };
 		A23CD12A1F735267004D66F4 /* FacialAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD1291F735267004D66F4 /* FacialAnalysisViewController.swift */; };
+		A23CD12E1F738A95004D66F4 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A23CD12B1F738A57004D66F4 /* AgeNet.mlmodel */; };
+		A23CD12F1F738A95004D66F4 /* CNNEmotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A23CD12D1F738A84004D66F4 /* CNNEmotions.mlmodel */; };
+		A23CD1301F738A95004D66F4 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A23CD12C1F738A5B004D66F4 /* GenderNet.mlmodel */; };
 		A24E797C1F71FD07000B9D23 /* MainFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24E797B1F71FD07000B9D23 /* MainFeatureCell.swift */; };
 		A29097D31F71FEA500A35837 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29097D21F71FEA500A35837 /* SampleData.swift */; };
 		A29097D51F72086E00A35837 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29097D41F72086E00A35837 /* ObjectDetectionViewController.swift */; };
@@ -34,6 +37,9 @@
 		A23CD1241F7346FF004D66F4 /* VideoCameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
 		A23CD1251F7346FF004D66F4 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		A23CD1291F735267004D66F4 /* FacialAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialAnalysisViewController.swift; sourceTree = "<group>"; };
+		A23CD12B1F738A57004D66F4 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = "<group>"; };
+		A23CD12C1F738A5B004D66F4 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		A23CD12D1F738A84004D66F4 /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNNEmotions.mlmodel; sourceTree = "<group>"; };
 		A24E797B1F71FD07000B9D23 /* MainFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeatureCell.swift; sourceTree = "<group>"; };
 		A29097D21F71FEA500A35837 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A29097D41F72086E00A35837 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 		A29097DC1F7236A300A35837 /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
+				A23CD12B1F738A57004D66F4 /* AgeNet.mlmodel */,
+				A23CD12D1F738A84004D66F4 /* CNNEmotions.mlmodel */,
+				A23CD12C1F738A5B004D66F4 /* GenderNet.mlmodel */,
 				A29097DE1F723AF200A35837 /* Inceptionv3.mlmodel */,
 			);
 			path = "ML Model";
@@ -203,6 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23CD12E1F738A95004D66F4 /* AgeNet.mlmodel in Sources */,
+				A23CD12F1F738A95004D66F4 /* CNNEmotions.mlmodel in Sources */,
+				A23CD1301F738A95004D66F4 /* GenderNet.mlmodel in Sources */,
 				A23CD1261F7347E9004D66F4 /* AVCaptureDevice+Extension.swift in Sources */,
 				A23CD1271F7347EA004D66F4 /* VideoCameraType.swift in Sources */,
 				A23CD1281F7347EA004D66F4 /* VideoCapture.swift in Sources */,
