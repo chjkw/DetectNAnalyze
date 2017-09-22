@@ -1,6 +1,6 @@
 //
 //  FacialAnalysisViewController.swift
-//  ai 11
+//  DnA
 //
 //  Created by Kyoungwon Jo on 2017. 9. 21..
 //  Copyright © 2017년 Kyoungwon Jo. All rights reserved.

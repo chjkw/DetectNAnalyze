@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A21A1F021F70A7AC000762AE /* ai 11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ai 11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21A1F021F70A7AC000762AE /* DnA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DnA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21A1F051F70A7AC000762AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A21A1F0A1F70A7AC000762AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A21A1F0C1F70A7AC000762AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		A21A1EF91F70A7AB000762AE = {
 			isa = PBXGroup;
 			children = (
-				A21A1F041F70A7AC000762AE /* ai 11 */,
+				A21A1F041F70A7AC000762AE /* DnA */,
 				A21A1F031F70A7AC000762AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,12 +70,12 @@
 		A21A1F031F70A7AC000762AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A21A1F021F70A7AC000762AE /* ai 11.app */,
+				A21A1F021F70A7AC000762AE /* DnA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A21A1F041F70A7AC000762AE /* ai 11 */ = {
+		A21A1F041F70A7AC000762AE /* DnA */ = {
 			isa = PBXGroup;
 			children = (
 				A23CD1221F7346FF004D66F4 /* VideoCapture */,
@@ -89,7 +89,7 @@
 				A21A1F0E1F70A7AC000762AE /* LaunchScreen.storyboard */,
 				A21A1F111F70A7AC000762AE /* Info.plist */,
 			);
-			path = "ai 11";
+			path = "DnA";
 			sourceTree = "<group>";
 		};
 		A23CD1221F7346FF004D66F4 /* VideoCapture */ = {
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A21A1F011F70A7AB000762AE /* ai 11 */ = {
+		A21A1F011F70A7AB000762AE /* DnA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A21A1F141F70A7AC000762AE /* Build configuration list for PBXNativeTarget "ai 11" */;
+			buildConfigurationList = A21A1F141F70A7AC000762AE /* Build configuration list for PBXNativeTarget "DnA" */;
 			buildPhases = (
 				A21A1EFE1F70A7AB000762AE /* Sources */,
 				A21A1EFF1F70A7AB000762AE /* Frameworks */,
@@ -155,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = "ai 11";
-			productName = "ai 11";
-			productReference = A21A1F021F70A7AC000762AE /* ai 11.app */;
+			name = "DnA";
+			productName = "DnA";
+			productReference = A21A1F021F70A7AC000762AE /* DnA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A21A1EFD1F70A7AB000762AE /* Build configuration list for PBXProject "ai 11" */;
+			buildConfigurationList = A21A1EFD1F70A7AB000762AE /* Build configuration list for PBXProject "DnA" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A21A1F011F70A7AB000762AE /* ai 11 */,
+				A21A1F011F70A7AB000762AE /* DnA */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YAAT2JZU7F;
-				INFOPLIST_FILE = "ai 11/Info.plist";
+				INFOPLIST_FILE = "DnA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jkw.ai-11";
@@ -380,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YAAT2JZU7F;
-				INFOPLIST_FILE = "ai 11/Info.plist";
+				INFOPLIST_FILE = "DnA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jkw.ai-11";
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A21A1EFD1F70A7AB000762AE /* Build configuration list for PBXProject "ai 11" */ = {
+		A21A1EFD1F70A7AB000762AE /* Build configuration list for PBXProject "DnA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A21A1F121F70A7AC000762AE /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A21A1F141F70A7AC000762AE /* Build configuration list for PBXNativeTarget "ai 11" */ = {
+		A21A1F141F70A7AC000762AE /* Build configuration list for PBXNativeTarget "DnA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A21A1F151F70A7AC000762AE /* Debug */,
