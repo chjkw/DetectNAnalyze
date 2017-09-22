@@ -83,9 +83,10 @@ class ObjectDetectionViewController: UIViewController, UINavigationControllerDel
       self.categoryLabel.text = ""
       self.confidenceLabel.text = ""
       self.defaultMessageLabel.text = ""
+      self.activityIndicatorView.startAnimating()
+      
       DispatchQueue.global(qos: .userInitiated).async {
         if #available(iOS 11.0, *) {
-          self.activityIndicatorView.startAnimating()
           self.detectObject()
         } else {
           self.confidenceLabel.text = "iOS 11 이하에서는 지원하지 않는 기능입니다."
