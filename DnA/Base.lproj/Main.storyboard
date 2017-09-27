@@ -13,7 +13,7 @@
         <!--Detect and Analysis-->
         <scene sceneID="Q0O-As-jt4">
             <objects>
-                <viewController id="Kf8-1D-Knb" customClass="MainViewController" customModule="ai_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kf8-1D-Knb" customClass="MainViewController" customModule="DnA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kcq-Ro-7oY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainFeatureCell" rowHeight="90" id="GSP-7h-okZ" customClass="MainFeatureCell" customModule="ai_11" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainFeatureCell" rowHeight="90" id="GSP-7h-okZ" customClass="MainFeatureCell" customModule="DnA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GSP-7h-okZ" id="Lau-55-bTf">
@@ -113,7 +113,7 @@
         <!--Object Detection View Controller-->
         <scene sceneID="ya7-4M-gIY">
             <objects>
-                <viewController id="2HC-Oa-8mI" customClass="ObjectDetectionViewController" customModule="ai_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2HC-Oa-8mI" customClass="ObjectDetectionViewController" customModule="DnA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scH-EJ-aP5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--Real Time Detection View Controller-->
         <scene sceneID="XFX-It-ZLV">
             <objects>
-                <viewController id="GFj-ys-vjb" customClass="RealTimeDetectionViewController" customModule="ai_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GFj-ys-vjb" customClass="RealTimeDetectionViewController" customModule="DnA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ufE-NF-bry">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
         <!--Facial Analysis View Controller-->
         <scene sceneID="950-sC-sfm">
             <objects>
-                <viewController id="9YH-nz-zI5" customClass="FacialAnalysisViewController" customModule="ai_11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9YH-nz-zI5" customClass="FacialAnalysisViewController" customModule="DnA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eEW-Ha-yHL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
