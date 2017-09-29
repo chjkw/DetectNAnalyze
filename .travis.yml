@@ -1,6 +1,9 @@
 os: osx
 osx_image: xcode9
 language: swift
+cache:
+  directories:
+  - $HOME/DnA/ML\ Model
 before_install:
         - brew update && brew install git-lfs
         - git lfs install
